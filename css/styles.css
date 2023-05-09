@@ -100,7 +100,7 @@ a {
     border: 2px solid var(--green-third);
 }
 .banner-title{
-    width: 400px;
+    width: 300px;
     font-size: 2rem;
 }
 .register-button:hover{
@@ -119,7 +119,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-family: 'League Script', cursive;
     border-bottom: 2px solid var(--bourdeaux-primary);
     color: var(--bourdeaux-primary);
@@ -146,7 +146,7 @@ a {
 
 .local_container{
     width: 100%;
-    height: 800px;
+    height: 900px;
     background-image: url('../assets/images/pizzeria.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -264,7 +264,6 @@ a {
         width: 700px;
         border-radius: 5px;
     }
-    
     .local-info{
         width: 75%;
         display: flex;
