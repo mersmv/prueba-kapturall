@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Costa Foodie</title>
+</head>
+<body>
+    <header>
+        <section  class="header">
+        <h1 class="header-title">Costa Foodie</h1>
+        <ul class="header-list header-none" id="menu" >
+            <li class="header-element">
+                <a href="#register" class="header-link">Registro</a>
+            </li>
+            <li class="header-element">
+                <a href="#about" class="header-link">Sobre Nosotros</a>
+            </li>
+            <li class="header-element">
+                <a href="#gallery" class="header-link">Galeria</a>
+            </li>
+        </ul>
+        <img id='logo__burguer' class='logo__burger' src="assets/images/icon-hamburguer.svg" alt="">
+        </section>
+        <section class="banner">
+            <img src="assets/images/logo.png" class="banner-logo" alt="Logo de la empresa de pizzas Costa">
+            <h1 class="banner-title">¿Te imaginas una vida sin pizza? Nosotros  tampoco.</h1>
+            <button class="register-button">Registrate!</button>
+        </section>
+    </header>
+    <article class="bestsellers">
+        <h1 class="bestsellers-title">Nuestros best sellers</h1>
+        <p class="bestsellers-description">Especialidades Italianas, sabores únicos que debes probar a un precio increible. No te arrepentiras de elegir entre nuestra selección de pizzas, con un sabor traido desde la costa italiano directo a tu plato.</p>
+        <div class="bestsellers-container">
+            <div class="best_container">
+                <img src="assets/images/pizza-margarita.jpg" alt="Foto de pizza margarita" class="best-photo">
+                <h2 class="best-title">Pizza Margartia</h2>
+                <p class="best-text">¡Descubre el sabor auténtico de Italia con nuestra pizza margarita! Preparada con una base de masa de pizza crujiente, cubierta con nuestra deliciosa salsa de tomate y queso mozarella, todo coronado con hojas frescas de albahaca. </p>
+            </div>
+            <div class="best_container">
+                <img src="assets/images/pizza-carbonara.jpg" alt="Foto de pizza cabonara" class="best-photo">
+                <h2 class="best-title">Pizza Carbonara</h2>
+                <p class="best-text">¡Siente el sabor cremoso y salado de Italia con nuestra pizza carbonara! Inspirada en la clásica pasta carbonara italiana, nuestra pizza lleva una base de masa de pizza crujiente cubierta con nuestra deliciosa salsa de nata y queso mozzarella derretido, coronada con trozos de panceta salada y huevo fresco.</p>
+            </div>
+            <div class="best_container">
+                <img src="assets/images/pizza-4-estaciones.jpg" alt="Foto de pizza 4 estaciones" class="best-photo">
+                <h2 class="best-title">Pizza 4 Estaciones</h2>
+                <p class="best-text">
+                    ¡Descubre la variedad de sabores en cada estación con nuestra pizza cuatro estaciones! Nuestra base de masa de pizza crujiente se cubre con nuestra deliciosa salsa de tomate y queso mozzarella derretido, y se divide en secciones de alcachofas frescas, champiñones, jamón y aceitunas negras</p>
+            </div>
+            <div class="best_container">
+                <img src="assets/images/pizza-diavola.jpg" alt="Foto de pizza diavola" class="best-photo">
+                <h2 class="best-title">Pizza Diavola</h2>
+                <p class="best-text">¡Prepárate para el fuego de nuestra pizza diavola! Esta pizza de origen italiano es perfecta para los amantes de los sabores intensos y picantes. Nuestra base de masa de pizza crujiente se cubre con nuestra deliciosa salsa de tomate y queso mozzarella derretido, y se remata con salami picante y pimientos rojos asados.</p>
+            </div>
+        </div>
+    </article>
+    <article class="local_container" id="about">
+        <div class="local-info">
+            <img src="assets/images/local.jpg" alt="Foto del local" class="local-photo">
+            <div class="local-description_container">
+                <h1 class="local-title">Nuestra pizzeria:</h1>
+                <p class="local-description">Situada en el corazón de la ciudad, nuestro pequeño local es el lugar perfecto para los amantes de la auténtica pizza italiana. Con una decoración acogedora y rústica, sentirás que estás en una auténtica trattoria italiana en el corazón de Roma.
+
+                Nuestro equipo de chefs expertos preparan las pizzas más deliciosas con ingredientes de la mejor calidad y siguiendo las recetas tradicionales de Italia. Cada pizza está hecha con una base de masa fina y crujiente, cubierta con nuestra deliciosa salsa de tomate y queso mozzarella fresco y derretido, y coronada con tus ingredientes favoritos.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article id="gallery">
+        <h1 class="gallery-title">¡No te arrepentirás de probarnos!</h1>
+        <div class="gallery-container">
+            <img src="assets/images/pizza-1.jpg" alt="Foto de una piiza">
+            <img src="assets/images/pizza-2.jpg" alt="Foto de una pizza">
+            <img src="assets/images/pizza-3.jpg" alt="Foto de gente disfrutando nuestra pizza">
+            <img src="assets/images/pizza-4.jpeg" alt="Foto de un horno">
+            <img src="assets/images/pizza-5.jpeg" alt="Foto amasando una pizza">
+            <img src="assets/images/pizza-6.jpg" alt="Foto de pizza y vino">
+        </div>
+    </article>
+    <article class="register_container" id="register">
+        <h1 class="register-title">¡Nosotros premiamos tu fidelidad! Registrate y aprovecha nuestros descuentos para socios.</h1>
+        <button class="register-button">Registrate!</button>
+    </article>
+    <footer class="footer">
+        <div class="icon_container">
+            <i class="fa-brands fa-square-facebook media-icon"></i>
+            <i class="fa-brands fa-tiktok media-icon"></i>
+            <i class="fa-brands fa-square-instagram media-icon"></i>
+        </div>
+        <p class="footer-text"> © All rights reserved. 2023</p>
+    </footer>
+</body>
+<script src="js/scripts.js"></script>
+<script src="https://kit.fontawesome.com/c655cb89ec.js" crossorigin="anonymous"></script>
+</html>

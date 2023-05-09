@@ -1,0 +1,292 @@
+:root{
+    --bourdeaux-primary: #a01005;
+    --cream-secondary:  #eebf79;
+    --green-third: #2f4b0e;
+    --light-green-third: #4b7816;
+    --orange-third: #f99f24;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 10px;
+}
+.header-title{
+    color: var(--bourdeaux-primary);
+    font-family: 'League Script', cursive;
+}
+.header-list{
+    background-color: white;
+    width: 100%;
+    left: 0;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 65px;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+.header-none{
+    display: none;
+}
+.logo__burger{
+    margin-right: 30px;
+    width: 15px;
+}
+.header-link:hover{
+    color: var(--bourdeaux-primary);
+    border-bottom: 2px solid var(--bourdeaux-primary);
+}
+.banner{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 100px;
+    background-image: url(/assets/images/banner.svg);
+    background-size: cover;
+    background-position: center;
+}
+.banner-logo{
+    width: 200px;
+}
+.register-button{
+    width: 200px;
+    height: 60px;
+    background-color: var(--green-third);
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--green-third);
+}
+.banner-title{
+    width: 400px;
+    font-size: 2rem;
+}
+.register-button:hover{
+    background-color: var(--light-green-third);
+    border: 2px solid var(--light-green-third);
+}
+.bestsellers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.bestsellers-title{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'League Script', cursive;
+    border-bottom: 2px solid var(--bourdeaux-primary);
+    color: var(--bourdeaux-primary);
+}
+.bestsellers-description{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.bestsellers-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.best-title{
+    color: var(--green-third);
+}
+
+.local_container{
+    width: 100%;
+    height: 800px;
+    background-image: url('../assets/images/pizzeria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.local-info{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    padding: 30px;
+    background-color: var(--orange-third);
+    border-radius: 5px;
+}
+.local-photo{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.local-title{
+    width: 250px;
+    font-size: 2rem;
+    font-family: 'League Script', cursive;
+    color: var(--bourdeaux-primary
+    );
+    border-bottom: 2px solid var(--bourdeaux-primary);
+}
+.gallery-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 150px;
+}
+.gallery-container{
+    display: grid;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+}
+.register_container{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background-color: var(--cream-secondary);
+    padding: 50px;
+}
+.footer{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon_container{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.media-icon{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .header{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .header-list{
+        width: 400px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        left: 75%;
+        gap: 30px;
+        top: 15px;
+        right: 0px;
+    }
+    .header-none{
+        display: flex }
+
+    .logo__burger{
+        display: none;
+    }
+    .banner{
+        background-size: cover;
+        gap: 0px;
+    }
+    .banner-title{
+        width: 800px;
+        font-size: 3rem;
+    }
+    
+    .banner-logo{
+        width: 300px;
+    }
+    .bestsellers-description{
+        width: 50%;
+        font-size: 1.7rem;
+    }
+    
+    .bestsellers-container{
+        grid-template-columns: repeat(4, 1fr);
+    }    
+    .local-photo{
+        width: 700px;
+        border-radius: 5px;
+    }
+    
+    .local-info{
+        width: 75%;
+        display: flex;
+        padding: 50px;
+    }
+    .local-title{
+        width: 300px;
+        font-size: 2.5rem;
+    }
+    .local-description{
+        font-size: 1.19rem;
+    }
+    .gallery-title{
+        font-size: 2.2rem;
+    }
+    
+    .gallery-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .register-title{
+        font-size: 2.2rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
